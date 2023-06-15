@@ -25,7 +25,7 @@ export default function App() {
   
   function Map() {
     return (
-      <MapContainer center={[lat, lng]} zoom={13} style={{ height: '400px', width: '100%' }}>
+      <MapContainer className='map-container' center={[lat, lng]} zoom={13} style={{ height: '400px', width: '100%' }}>
         <IpLocation />
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
