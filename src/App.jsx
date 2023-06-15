@@ -41,7 +41,7 @@ export default function App() {
       try {
         // Fetch location data from ipify
         const locationInfo = await fetch(
-          `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.VITE_API_KEY_IPIFY}`
+          `https://geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_API_KEY_IPIFY}`
         );
         const data = await locationInfo.json();
         setIp(data.ip);
