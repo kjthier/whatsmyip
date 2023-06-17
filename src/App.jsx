@@ -3,7 +3,7 @@ import './App.css'
 import { MapContainer, Marker, TileLayer, useMap } from 'react-leaflet';
 import { DateTime } from "luxon";
 import Card from 'react-bootstrap/Card'
-// import dotenv from "dotenv";
+import IPIcon from './assets/IP.jpg';
 
 
 export default function App() {
@@ -71,7 +71,7 @@ export default function App() {
 
   return (
     <Card className='container'>
-      <Card.Img className='ip-icon' variant="top" src="src/assets/IP.jpg" />
+      <Card.Img className='ip-icon' variant="top" src={IPIcon} />
       <Card.Body>
         <Card.Title className='title'>IP Address Tracker</Card.Title>
           <Map lat={lat} lng={lng}/>
